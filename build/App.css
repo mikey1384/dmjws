@@ -18,6 +18,11 @@
   font-size: large;
 }
 
+.site-cover-photo {
+  background-image: url("./images/cover.jpg");
+  background-size: cover;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
