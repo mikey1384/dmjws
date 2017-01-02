@@ -7,24 +7,22 @@ export default function TopNav({location}) {
     <nav className="navbar navbar-default navbar-static-top">
       <div className="container-fluid">
         <div className="navbar-header">
-          <a className="navbar-brand">Minecraft</a>
+          <Link to="/" className="navbar-brand">Minecraft</Link>
         </div>
         <ul className="nav navbar-nav">
-          {tabs.map((tab, index) => {
-            return (
-              <li
-                key={index}
-                className={tab.pathname === location && 'active'}
+          {tabs.map((tab, index) => (
+            <li
+              key={index}
+              className={tab.pathname === location && 'active'}
+            >
+              <Link
+                style={{cursor: 'pointer'}}
+                to={`/${tab.pathname}`}
               >
-                <Link
-                  style={{cursor: 'pointer'}}
-                  to={`/${tab.pathname}`}
-                >
-                  {tab.tabLabel}
-                </Link>
-              </li>
-            )
-          })}
+                {tab.tabLabel}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
