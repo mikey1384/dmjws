@@ -1,17 +1,10 @@
 import React from 'react';
 
-export default function Section({style = {textAlign: 'left'}, titleColor, title, description, children}) {
+export default function Section({style, titleColor, title, description, children}) {
   return (
-    <div style={style}>
-      <h2 style={{color: titleColor}}>
-        {title}
-        {description &&
-          <span>
-            <br />
-            <small>{description}</small>
-          </span>
-        }
-      </h2>
+    <div style={{...style, textAlign: 'left'}}>
+      <h2 style={{color: titleColor}}>{title}</h2>
+      {description && <p>{description}</p>}
       {children}
     </div>
   )

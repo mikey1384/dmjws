@@ -4,27 +4,24 @@ import {Link} from 'react-router';
 
 export default function TopNav({location}) {
   return (
-    <nav className="navbar navbar-default navbar-static-top">
-      <div className="container-fluid">
-        <div className="navbar-header">
-          <Link to="/" className="navbar-brand">Minecraft</Link>
-        </div>
-        <ul className="nav navbar-nav">
-          {tabs.map((tab, index) => (
-            <li
-              key={index}
-              className={tab.pathname === location && 'active'}
+    <nav className="navbar navbar-light bg-faded">
+      <Link to="/" className="navbar-brand">Minecraft</Link>
+      <ul className="nav navbar-nav">
+        {tabs.map((tab, index) => (
+          <li
+            key={index}
+            className={tab.pathname === location ? 'nav-item active' : 'nav-item'}
+          >
+            <Link
+              className="nav-link"
+              style={{cursor: 'pointer'}}
+              to={`/${tab.pathname}`}
             >
-              <Link
-                style={{cursor: 'pointer'}}
-                to={`/${tab.pathname}`}
-              >
-                {tab.tabLabel}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+              {tab.tabLabel}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </nav>
   )
 }

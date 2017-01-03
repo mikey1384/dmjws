@@ -9,12 +9,20 @@ class App extends Component {
       <div className="App">
         <Cover
           text="Welcome to my Minecraft Website!"
-          textColor={`#${Math.floor(Math.random()*16777215).toString(16)}`}
+          textColor={`#${this.getCoverColor()}`}
         />
         <TopNav location={!location.pathname.split('/')[1] ? '' : location.pathname.split('/')[1]} />
         {children}
       </div>
     );
+  }
+
+  getCoverColor() {
+    return (
+      function factory(string, c) {
+        return string[Math.floor(Math.random() * string.length)] + (c && factory(string, c - 1));
+      }
+    )('789ABCDEF', 4);
   }
 }
 

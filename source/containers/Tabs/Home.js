@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
+import PageHeading from 'components/PageHeading';
 
 export default class Home extends Component {
   render() {
     return (
-      <div>Home</div>
+      <div>
+        <PageHeading
+          title="Welcome!"
+        />
+      </div>
     )
   }
 }

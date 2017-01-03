@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Container({children}) {
+export default function Container({children, style}) {
   return (
-    <div className="container" style={{paddingBottom: '4em'}}>
+    <div className="container" style={{paddingBottom: '4rem', ...style}}>
       {children}
     </div>
   )

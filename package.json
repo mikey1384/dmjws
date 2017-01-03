@@ -62,7 +62,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "server": "node index.js"
+    "server": "sudo forever -o api_out.log -e api_err.log start index.js",
+    "stopserver": "sudo forever stop index.js"
   },
   "jest": {
     "collectCoverageFrom": [

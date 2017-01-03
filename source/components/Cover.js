@@ -3,7 +3,7 @@ import React from 'react';
 export default function Cover({text, textColor}) {
   return (
     <div
-      className="jumbotron site-cover-photo"
+      className="jumbotron jumbotron-fluid site-cover-photo"
       style={{
         height: '20em',
         minHeight: '30vh',
@@ -14,10 +14,12 @@ export default function Cover({text, textColor}) {
     >
       <div className="container-fluid">
         <h1
+          className="display-3"
           style={{
             color: textColor || '#fff',
             marginTop: '0px',
             marginBottom: '0px',
+            fontWeight: 'bold'
           }}
         >
           {text}

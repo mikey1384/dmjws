@@ -1,0 +1,21 @@
+App listening on port 80!
+::1 - - [03/Jan/2017:15:04:40 +0000] "GET / HTTP/1.1" 200 452 11.326 ms
+::1 - - [03/Jan/2017:15:04:40 +0000] "GET /index.css HTTP/1.1" 200 63 16.628 ms
+::1 - - [03/Jan/2017:15:04:40 +0000] "GET /App.css HTTP/1.1" 200 437 27.800 ms
+::1 - - [03/Jan/2017:15:04:40 +0000] "GET /css/bootstrap.min.css HTTP/1.1" 200 105356 17.117 ms
+::1 - - [03/Jan/2017:15:04:40 +0000] "GET /static/js/main.8886246a.js HTTP/1.1" 200 222101 31.398 ms
+::1 - - [03/Jan/2017:15:04:41 +0000] "GET /images/cover.jpg HTTP/1.1" 200 121903 1.357 ms
+::1 - - [03/Jan/2017:15:04:41 +0000] "GET /favicon.ico HTTP/1.1" 200 24838 2.167 ms
+::1 - - [03/Jan/2017:15:04:42 +0000] "GET /images/worlds/overworld.jpg HTTP/1.1" 200 86959 4.854 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/worlds/nether.png HTTP/1.1" 200 872763 5.524 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/worlds/end.png HTTP/1.1" 200 2671350 18.454 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/mobs/zombie.png HTTP/1.1" 200 20031 31.808 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/mobs/spider.png HTTP/1.1" 200 26744 28.403 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/mobs/creeper.png HTTP/1.1" 200 74960 28.367 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/mobs/endermen.png HTTP/1.1" 200 12424 18.941 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/mobs/skeleton.png HTTP/1.1" 200 87961 27.842 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/mobs/witch.png HTTP/1.1" 200 415279 19.082 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/mobs/blaze.png HTTP/1.1" 200 107437 2.035 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/mobs/ghast.gif HTTP/1.1" 200 139654 1.912 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/mobs/pigmen.png HTTP/1.1" 200 125007 2.361 ms
+::1 - - [03/Jan/2017:15:04:43 +0000] "GET /images/mobs/witherskeleton.png HTTP/1.1" 200 61567 2.168 ms

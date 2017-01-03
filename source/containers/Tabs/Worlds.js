@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import PageHeader from 'components/PageHeader';
+import PageHeading from 'components/PageHeading';
 import Section from 'components/Section';
 import Container from 'components/Container';
 
@@ -8,7 +8,7 @@ export default class Worlds extends Component {
     const {images} = this.props;
     return (
       <div>
-        <PageHeader
+        <PageHeading
           title="Minecraft Worlds!!"
           description="Three unique worlds of Minecraft"
         />
@@ -16,7 +16,7 @@ export default class Worlds extends Component {
           {images.map((image, index) => (
             <Section
               key={index}
-              style={{textAlign: 'left', marginTop: index > 0 && '5em'}}
+              style={{textAlign: 'left', marginTop: index > 0 ? '3em' : '2.5em'}}
               {...image}
             >
               <div style={{textAlign: 'center'}}>
