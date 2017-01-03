@@ -6,6 +6,7 @@ import Commands from 'containers/Tabs/Commands';
 import Redstone from 'containers/Tabs/Redstone';
 import Entity from 'containers/Tabs/Entity';
 import References from 'containers/Tabs/References';
+import NotFound from 'components/NotFound';
 import {Route, IndexRoute} from 'react-router';
 import App from 'containers/App';
 import Wrapper from 'components/HigherOrder/Wrapper';
@@ -175,5 +176,6 @@ export const routes = (
       if (index === 0) return <IndexRoute key={index} component={Wrapper(tab.component, tab.data)} />
       return <Route key={index} path={`/${tab.pathname}`} component={Wrapper(tab.component, tab.data)} />
     })}
+    <Route path='*' component={NotFound} />
   </Route>
 )
