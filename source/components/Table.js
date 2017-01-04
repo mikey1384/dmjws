@@ -7,15 +7,15 @@ export default function Table({columns, rows}) {
       <thead>
         <tr>
           {columns.map((column, index) => (
-            <th style={{textAlign: index !== 0 && 'center'}}>{column}</th>
+            <th key={index} style={{textAlign: index !== 0 && 'center'}}>{column}</th>
           ))}
         </tr>
       </thead>
       <tbody>
         {rows.map((row, index) => (
-          <tr>
+          <tr key={index}>
             {row.map((cell, index) => index === 0 ?
-              <th scope="row">{cell}</th> : <td dangerouslySetInnerHTML={{__html: cell}} />
+              <th key={index} scope="row">{cell}</th> : <td key={index} dangerouslySetInnerHTML={{__html: cell}} />
             )}
           </tr>
         ))}

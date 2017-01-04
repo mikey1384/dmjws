@@ -3,7 +3,14 @@ import PageHeading from 'components/PageHeading';
 import Container from 'components/Container';
 import Section from 'components/Section';
 import Card from 'components/Card';
+import {connect} from 'react-redux';
 
+
+@connect(
+  state => ({
+    sections: state.MobsReducer.sections
+  })
+)
 export default class Mobs extends Component {
   render() {
     const {sections} = this.props;
