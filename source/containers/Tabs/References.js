@@ -4,13 +4,7 @@ import Container from 'components/Container';
 import Table from 'components/Table';
 import {connect} from 'react-redux';
 
-
-@connect(
-  state => ({
-    table: state.ReferencesReducer.table
-  })
-)
-export default class References extends Component {
+class References extends Component {
   render() {
     const {table} = this.props;
     return (
@@ -23,3 +17,9 @@ export default class References extends Component {
     )
   }
 }
+
+export default connect(
+  state => ({
+    table: state.ReferencesReducer.table
+  })
+)(References)

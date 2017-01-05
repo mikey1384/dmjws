@@ -6,12 +6,7 @@ import Card from 'components/Card';
 import {connect} from 'react-redux';
 
 
-@connect(
-  state => ({
-    sections: state.MobsReducer.sections
-  })
-)
-export default class Mobs extends Component {
+class Mobs extends Component {
   render() {
     const {sections} = this.props;
     return (
@@ -56,3 +51,9 @@ export default class Mobs extends Component {
     }, [])
   }
 }
+
+export default connect(
+  state => ({
+    sections: state.MobsReducer.sections
+  })
+)(Mobs)

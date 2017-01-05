@@ -4,12 +4,8 @@ import Container from 'components/Container';
 import Table from 'components/Table';
 import {connect} from 'react-redux';
 
-@connect(
-  state => ({
-    commands: state.CommandsReducer.commands
-  })
-)
-export default class Commands extends Component {
+
+class Commands extends Component {
   render() {
     const {commands} = this.props;
     return (
@@ -24,3 +20,9 @@ export default class Commands extends Component {
     )
   }
 }
+
+export default connect(
+  state => ({
+    commands: state.CommandsReducer.commands
+  })
+)(Commands)

@@ -4,13 +4,7 @@ import Section from 'components/Section';
 import Container from 'components/Container';
 import {connect} from 'react-redux';
 
-
-@connect(
-  state => ({
-    worlds: state.WorldsReducer.worlds
-  })
-)
-export default class Worlds extends Component {
+class Worlds extends Component {
   render() {
     const {worlds} = this.props;
     return (
@@ -36,3 +30,9 @@ export default class Worlds extends Component {
     )
   }
 }
+
+export default connect(
+  state => ({
+    worlds: state.WorldsReducer.worlds
+  })
+)(Worlds)

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Cover from 'components/Cover';
 import TopNav from 'containers/App/TopNav';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     const {location, children} = this.props;
     return (
@@ -11,7 +11,7 @@ class App extends Component {
           text="Welcome to my Minecraft Website!"
           textColor={`#${this.getCoverColor()}`}
         />
-        <TopNav location={!location.pathname.split('/')[1] ? '' : location.pathname.split('/')[1]} />
+        <TopNav location={!!location ? (!location.pathname.split('/')[1] ? '' : location.pathname.split('/')[1]) : ''} />
         {children}
       </div>
     );
@@ -25,5 +25,3 @@ class App extends Component {
     )('789ABCDEF', 4);
   }
 }
-
-export default App;
