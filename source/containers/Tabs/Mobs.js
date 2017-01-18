@@ -4,6 +4,7 @@ import Container from 'components/Container';
 import Section from 'components/Section';
 import Card from 'components/Card';
 import {connect} from 'react-redux';
+import {CardDeck} from 'reactstrap';
 
 
 class Mobs extends Component {
@@ -35,6 +36,7 @@ class Mobs extends Component {
 
   renderDeck(thumbs) {
     let deckArray = [];
+    let rowNumber = 0;
     return thumbs.reduce((decks, thumb, index, thumbs) => {
       if (index % 3 < 2 && index !== thumbs.length - 1) {
         deckArray.push(thumb);
@@ -42,11 +44,12 @@ class Mobs extends Component {
       }
       deckArray.push(thumb);
       let deck = deckArray;
+      rowNumber++;
       deckArray = [];
       return decks.concat([
-        <div className="card-deck text-xs-center" key={decks.length}>
+        <CardDeck key={decks.length} style={{marginTop: rowNumber > 1 && '1em'}}>
           {deck.map((thumb, index) => <Card key={index} {...thumb} />)}
-        </div>
+        </CardDeck>
       ])
     }, [])
   }
@@ -54,6 +57,6 @@ class Mobs extends Component {
 
 export default connect(
   state => ({
-    sections: state.MobsReducer.sections
+    sections: state.mobs.sections
   })
 )(Mobs)

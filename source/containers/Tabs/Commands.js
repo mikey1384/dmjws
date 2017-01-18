@@ -23,6 +23,6 @@ class Commands extends Component {
 
 export default connect(
   state => ({
-    commands: state.CommandsReducer.commands
+    commands: state.commands.table
   })
 )(Commands)

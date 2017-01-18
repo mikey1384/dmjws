@@ -20,6 +20,6 @@ class References extends Component {
 
 export default connect(
   state => ({
-    table: state.ReferencesReducer.table
+    table: state.references.table
   })
 )(References)

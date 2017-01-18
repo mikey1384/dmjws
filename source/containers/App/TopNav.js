@@ -1,12 +1,13 @@
 import React from 'react';
 import {tabs} from 'Routes';
 import {Link} from 'react-router';
+import {Navbar, Nav} from 'reactstrap';
 
 export default function TopNav({location}) {
   return (
-    <nav className="navbar navbar-light bg-faded">
+    <Navbar color="faded" light toggleable>
       <Link to="/" className="navbar-brand">Minecraft</Link>
-      <ul className="nav navbar-nav">
+      <Nav navbar>
         {tabs.map((tab, index) => (
           <li
             key={index}
@@ -21,7 +22,7 @@ export default function TopNav({location}) {
             </Link>
           </li>
         ))}
-      </ul>
-    </nav>
+      </Nav>
+    </Navbar>
   )
 }

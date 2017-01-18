@@ -1,5 +1,5 @@
 const defaultState = {
-  worlds: [
+  sections: [
     {
       title: 'Overworld',
       titleColor: 'green',

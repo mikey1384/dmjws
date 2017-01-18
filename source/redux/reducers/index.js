@@ -5,8 +5,8 @@ import ReferencesReducer from './ReferencesReducer';
 import {combineReducers} from 'redux';
 
 export const rootReducer = combineReducers({
-  CommandsReducer,
-  WorldsReducer,
-  MobsReducer,
-  ReferencesReducer
+  commands: CommandsReducer,
+  worlds: WorldsReducer,
+  mobs: MobsReducer,
+  references: ReferencesReducer
 })

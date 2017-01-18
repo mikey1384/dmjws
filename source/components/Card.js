@@ -1,13 +1,16 @@
 import React from 'react';
+import {Card, CardImg, CardText, CardBlock, CardTitle} from 'reactstrap';
 
-export default function Card({title, description, src, topMargin}) {
+export default function ImageCard({title, description, src, topMargin}) {
   return (
-    <div className="card">
-      <img className="card-img-top img-fluid" src={src} alt={title} style={{marginTop: !!topMargin && '1rem'}} />
-      <div className="card-block">
-        <h4 className="card-title">{title}</h4>
-        <p className="card-text text-xs-left">{description}</p>
+    <Card style={{textAlign: 'center'}}>
+      <div style={{padding: !!topMargin && '1em'}}>
+        <CardImg top style={{maxWidth: '100%', maxHeight: '40rem'}} src={src} alt="Card image cap" />
       </div>
-    </div>
+      <CardBlock>
+        <CardTitle>{title}</CardTitle>
+        <CardText>{description}</CardText>
+      </CardBlock>
+    </Card>
   )
 }

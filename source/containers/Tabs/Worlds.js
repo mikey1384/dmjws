@@ -33,6 +33,6 @@ class Worlds extends Component {
 
 export default connect(
   state => ({
-    worlds: state.WorldsReducer.worlds
+    worlds: state.worlds.sections
   })
 )(Worlds)
