@@ -1,5 +1,5 @@
 import request from 'axios';
-const URL = 'http://localhost:3500';
+import {URL} from 'constants/hidden';
 
 export const signup = props => dispatch =>
 request.post(`${URL}/users`, props)
