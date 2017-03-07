@@ -19,8 +19,8 @@
 }
 
 .site-cover-photo {
-  background-image: url("./images/cover.jpg");
-  background-size: cover;
+  background-image: url("./images/old1.jpg");
+  background-size: contain;
 }
 
 @keyframes App-logo-spin {

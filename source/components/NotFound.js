@@ -6,7 +6,7 @@ export default class Home extends Component {
     return (
       <div>
         <PageHeading
-          title="Page Not Found"
+          title="Sorry!Page Not Found😭"
         />
       </div>
     )
