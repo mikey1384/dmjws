@@ -41,6 +41,13 @@ class SignupModal extends Component {
                 placeholder="Enter Password"
                 value={password}
                 onChange={event => this.setState({password: event.target.value})} />
+                <Label>Check Password</Label>
+                <Input
+                  type="password"
+                  name="password"
+                  placeholder="Enter Password"
+                  value={password}
+                  onChange={event => this.setState({password: event.target.value})} />
             </FormGroup>
           </Form>
         </ModalBody>

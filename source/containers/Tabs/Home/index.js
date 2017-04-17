@@ -22,20 +22,20 @@ export default class Home extends Component {
     return (
       <div>
         <PageHeading
-          title="Welcome!"
+          title="Sign in to DMJW's"
         />
         <ButtonGroup style={{marginTop: '1em'}}>
           <Button
             color="warning"
             onClick={this.toggleLogin}
           >
-            Log In
+            Sign In to DMJW's internet
           </Button>
           <Button
             color="success"
             onClick={this.toggleSignup}
           >
-            Sign Up
+            Don't have a account yet?Sign Up
           </Button>
         </ButtonGroup>
         <LoginModal isOpen={loginModalShown} toggle={this.toggleLogin} />

@@ -8,7 +8,7 @@ import {
 export default function LoginModal({isOpen, toggle}) {
   return (
     <Modal isOpen={isOpen} toggle={toggle}>
-      <ModalHeader toggle={toggle}>Log In</ModalHeader>
+      <ModalHeader toggle={toggle}>Sign In</ModalHeader>
       <ModalBody>
         <Form>
           <FormGroup>

@@ -7,7 +7,7 @@ export default function TopNav({location}) {
   return (
     <Navbar color="faded" light toggleable>
       <Link to="/" className="navbar-brand">
-        <img src="./public/images/DMJW's.ttif.ttif" />
+        <img src="./public/favicon.ico" />
       </Link>
       <Nav navbar>
         {tabs.map((tab, index) => (

@@ -11,7 +11,7 @@ class Commands extends Component {
     return (
       <div>
         <PageHeading
-          title="Minecraft Commands"
+          title="1"
         />
         <Container style={{marginTop: '2rem'}}>
           <Table {...commands} />

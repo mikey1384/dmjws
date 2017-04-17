@@ -19,8 +19,7 @@
 }
 
 .site-cover-photo {
-  background-image: url("./images/old1.jpg");
-  background-size: contain;
+  background-color: #00DFFF;
 }
 
 @keyframes App-logo-spin {

@@ -10,21 +10,13 @@ export default class App extends Component {
     return (
       <div className="App">
         <Cover
-          text="Welcome to DMJW's website!"
-          textColor={`#${this.getCoverColor()}`}
+          text="DMJW's"
+          textColor="#FF00CE"
         />
         Now DMJW's is in the internet!
         <TopNav location={!!location ? (!location.pathname.split('/')[1] ? '' : location.pathname.split('/')[1]) : ''} />
         {children}
       </div>
     );
-  }
-
-  getCoverColor() {
-    return (
-      function factory(string, c) {
-        return string[Math.floor(Math.random() * string.length)] + (c && factory(string, c - 1));
-      }
-    )('789ABCDEF', 4);
   }
 }
