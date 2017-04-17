@@ -6,7 +6,8 @@ export default class Redstone extends Component {
     return (
       <div>
         <PageHeading
-          title="Redstone tab coming soon"
+          title="Redstone tab soon dies!"
+          titleColor="#FF0027"
         />
       </div>
     )

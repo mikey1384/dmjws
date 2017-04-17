@@ -18,13 +18,13 @@ export const tabs = [
     component: Home
   },
   {
-    pathname: 'worlds',
-    tabLabel: 'Worlds',
+    pathname: 'map/dmjws/',
+    tabLabel: 'map',
     component: Worlds
   },
   {
     pathname: 'mobs',
-    tabLabel: 'Mobs',
+    tabLabel: '',
     component: Mobs
   },
   {
@@ -43,8 +43,8 @@ export const tabs = [
     component: Entity
   },
   {
-    pathname: 'references',
-    tabLabel: 'References',
+    pathname: 'something',
+    tabLabel: 'hello',
     component: References
   }
 ]

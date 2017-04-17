@@ -1,21 +1,21 @@
 const defaultState = {
   sections: [
     {
-      title: 'Overworld',
+      title: 'World MAP',
       titleColor: 'green',
       description: 'The overworld is where we live and spawn in.',
       imageSrc: '/images/worlds/overworld.jpg'
     },
     {
-      title: 'Nether',
+      title: 'Space',
       titleColor: 'red',
-      description: 'The nether is a sort of hell, where strange monsters like Zombie pigmen, blazes, and ghasts spawn.',
+      description: 'The space is a very dangerous place.',
       imageSrc: '/images/worlds/nether.png'
     },
     {
-      title: 'End',
+      title: 'other planets',
       titleColor: 'purple',
-      description: 'The end is a sort of empty world where Endermen(see mobs for information) and the ender dragon lives.',
+      description: 'other planets are the end of the world!',
       imageSrc: '/images/worlds/end.png'
     }
   ]

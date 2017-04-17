@@ -2,11 +2,11 @@ const defaultState = {
   sections: [
     {
       title: 'Overworld Monsters',
-      titleColor: 'green',
+      titleColor: '#000000',
       thumbs: [
         {
           title: 'Zombie',
-          description: 'Zombies are one of the most common mobs in Minecraft. They spawn in caves and at night. They have 20 health(10 hearts, just like us)(when they don`t have armour) and give damage 2 HP(1 heart) in easy, 1.5 hearts in normal, and 2 hearts in hard. (easy, normal, and hard is the difficulty). Watch out for chicken jockeys- they`re REALLY fast!!!',
+          description: 'Zombies are one of the most rarest mobs in Minecraft. They spawn in caves and at night. They have 20 health(10 hearts, just like us)(when they don`t have armour) and give damage 2 HP(1 heart) in easy, 1.5 hearts in normal, and 2 hearts in hard. (easy, normal, and hard is the difficulty). Watch out for chicken jockeys- they`re REALLY fast!!!',
           src: '/images/mobs/zombie.png',
           topMargin: true
         },
