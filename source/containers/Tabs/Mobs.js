@@ -13,24 +13,12 @@ class Mobs extends Component {
     return (
       <div>
         <PageHeading
-          title="Not In Minecraft Mobs!!"
-          titleColor="#0EEDFF"
-          description="Very Not Dangerous Monsters In Minecraft"
+          title="DMJW's VIDEOS!!"
+          titleColor="#ff009a"
+          description="DMJW's videos Right here! Subscreibe!"
         />
-        <Container>
-          {sections.map((section, index) => (
-            <Section
-              title={section.title}
-              titleColor={section.titleColor}
-              style={{marginTop: index === 0 ? '2em' : '3em'}}
-              key={index}
-            >
-              <div className="card-deck-wrapper" style={{marginTop: '2em'}}>
-                {this.renderDeck(section.thumbs)}
-              </div>
-            </Section>
-          ))}
-        </Container>
+        <h2>Recently Popular</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/K9cofR9VI6M?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
     )
   }

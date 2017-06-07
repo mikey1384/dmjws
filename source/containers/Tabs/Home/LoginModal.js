@@ -23,6 +23,9 @@ export default function LoginModal({isOpen, toggle}) {
       </ModalBody>
       <ModalFooter>
         <Button color="primary" onClick={toggle}>Log In</Button>{' '}
+        <button class="buttonload">
+        
+        </button>
         <Button color="secondary" onClick={toggle}>Cancel</Button>
       </ModalFooter>
     </Modal>

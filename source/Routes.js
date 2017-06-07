@@ -23,8 +23,8 @@ export const tabs = [
     component: Worlds
   },
   {
-    pathname: 'mobs',
-    tabLabel: '',
+    pathname: 'videos/youtube/dmjws/',
+    tabLabel: 'Videos',
     component: Mobs
   },
   {
