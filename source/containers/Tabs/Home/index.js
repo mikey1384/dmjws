@@ -35,7 +35,7 @@ export default class Home extends Component {
             color="success"
             onClick={this.toggleSignup}
           >
-            Don't have a account yet?Sign Up
+            Don't have a account yet? Sign Up
           </Button>
         </ButtonGroup>
         <LoginModal isOpen={loginModalShown} toggle={this.toggleLogin} />

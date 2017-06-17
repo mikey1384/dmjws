@@ -1,11 +1,11 @@
-const User = require('../models/user');
+const express = require('express')
+const router = express.Router()
+const pool = require('../pool')
+const {poolQuery} = require('../helpers')
 
-module.exports = {
-  signup(req, res, next) {
-    console.log("came in")
-    const userProps = req.body;
-    User.create(userProps)
-      .then(user => res.send(user))
-      .catch(next)
-  }
-}
+router.get('/', (req, res) => {
+  console.log('here')
+  res.send({success: true})
+})
+
+module.exports = router

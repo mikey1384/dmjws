@@ -13,7 +13,7 @@ export default class App extends Component {
           text="DMJW's"
           textColor="#FF00CE"
         />
-        Now DMJW's is in the internet!
+        
         <TopNav location={!!location ? (!location.pathname.split('/')[1] ? '' : location.pathname.split('/')[1]) : ''} />
         {children}
       </div>
