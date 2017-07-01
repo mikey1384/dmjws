@@ -27,7 +27,7 @@ class LoginModal extends Component {
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={() => checkIfWorks()}>Log In</Button>{' '}
-          <button class="buttonload">
+          <button className="buttonload">
 
           </button>
           <Button color="secondary" onClick={toggle}>Cancel</Button>
