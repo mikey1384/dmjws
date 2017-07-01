@@ -12,8 +12,7 @@ export default class App extends Component {
         <Cover
           text="DMJW's"
           textColor="#FF00CE"
-        />
-        
+        ></Cover>
         <TopNav location={!!location ? (!location.pathname.split('/')[1] ? '' : location.pathname.split('/')[1]) : ''} />
         {children}
       </div>

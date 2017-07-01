@@ -25,10 +25,10 @@ class SignupModal extends Component {
         <ModalBody>
           <Form>
             <FormGroup>
-              <Label>Username</Label>
+              <Label>ID</Label>
               <Input
-                name="username"
-                placeholder="Enter Username"
+                name="ID"
+                placeholder="Enter ID"
                 value={username}
                 onChange={event => this.setState({username: event.target.value})}
               />

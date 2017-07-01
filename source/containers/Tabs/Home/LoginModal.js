@@ -12,20 +12,18 @@ export default function LoginModal({isOpen, toggle}) {
       <ModalBody>
         <Form>
           <FormGroup>
-            <Label>Username</Label>
-            <Input name="username" placeholder="Enter Username" />
+            <Label>ID</Label>
+            <Input name="username" placeholder="Enter your ID" />
           </FormGroup>
           <FormGroup>
             <Label>Password</Label>
-            <Input type="password" name="password" placeholder="Enter Password" />
+            <Input type="password" name="password" placeholder="Enter your PW" />
           </FormGroup>
         </Form>
       </ModalBody>
       <ModalFooter>
-        <Button color="primary" onClick={toggle}>Log In</Button>{' '}
-        <button class="buttonload">
-        
-        </button>
+        <Button color="primary" onClick={toggle}>Sign In</Button>{' '}
+
         <Button color="secondary" onClick={toggle}>Cancel</Button>
       </ModalFooter>
     </Modal>

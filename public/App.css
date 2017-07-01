@@ -19,7 +19,15 @@
 }
 
 .site-cover-photo {
-  background-color: #00DFFF;
+  background-color: #00f9ff;
+}
+
+.login-cover-photo{
+  background: #FF00C1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #FF00C1, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #FF00C1, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #FF00C1, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #FF00C1, yellow); /* Standard syntax (must be last) */
 }
 
 @keyframes App-logo-spin {
