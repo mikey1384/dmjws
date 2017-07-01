@@ -7,7 +7,7 @@ import {
   Form, FormGroup, Label, Input
 } from 'reactstrap';
 
-export default class LoginModal extends Component {
+class LoginModal extends Component {
   render() {
     const {isOpen, toggle, checkIfWorks} = this.props
     return (
