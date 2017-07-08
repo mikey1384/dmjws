@@ -4,7 +4,8 @@ const pool = require('../pool')
 const {poolQuery} = require('../helpers')
 
 router.get('/', (req, res) => {
-  console.log('here')
+  const {username, password} = req.query;
+  console.log(username, password);
   res.send({success: true})
 })
 

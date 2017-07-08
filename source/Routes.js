@@ -18,8 +18,7 @@ export const tabs = [
     component: Home
   },
   {
-    pathname: 'map/dmjws/',
-    tabLabel: 'map',
+    pathname: 'login/dmjws=account',
     component: Worlds
   },
   {

@@ -8,8 +8,16 @@ import {
 } from 'reactstrap';
 
 class LoginModal extends Component {
+  constructor() {
+    super()
+    this.state = {
+      username: '',
+      password: ''
+    }
+  }
   render() {
     const {isOpen, toggle, checkIfWorks} = this.props
+    const {username, password} = this.state
     return (
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader toggle={toggle}>Sign In</ModalHeader>
@@ -17,16 +25,27 @@ class LoginModal extends Component {
           <Form>
             <FormGroup>
               <Label>Username</Label>
-              <Input name="username" placeholder="Enter Username" />
+              <Input
+                name="username"
+                placeholder="Enter Username"
+                onChange={event => this.setState({username: event.target.value})}
+                value={username}
+              />
             </FormGroup>
             <FormGroup>
               <Label>Password</Label>
-              <Input type="password" name="password" placeholder="Enter Password" />
+              <Input
+                type="password"
+                name="password"
+                placeholder="Enter Password"
+                onChange={event => this.setState({password: event.target.value})}
+                value={password}
+               />
             </FormGroup>
           </Form>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={() => checkIfWorks()}>Log In</Button>{' '}
+          <Button color="primary" onClick={() => checkIfWorks(username, password)}>Log In</Button>{' '}
           <button className="buttonload">
 
           </button>
